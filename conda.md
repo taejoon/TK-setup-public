@@ -90,8 +90,36 @@ or
 rm -rf ~/miniconda3/
 ```
 
+You may also have '.condarc' and '.conda' on your home directory for configuration. You can remove them also. 
+
+## Basic usage
+
+* Search the package.
+```
+conda search <package name>
+```
+* Install the package.
+```
+conda install <package name>
+```
+* Update the package.
+```
+conda update <package name>
+```
+* Update all packages.
+```
+conda update --all
+```
+
 ## Change the python version
+
 If you want to upgrade/downgrade your python version, use the following method (assume that you want to install python 3.10).
 ```bash
 conda install python=3.10
 ```
+
+## References
+* https://conda.io/projects/conda/en/latest/user-guide/getting-started.html 
+* Cheat Sheet: https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html
+* https://towardsdatascience.com/managing-project-specific-environments-with-conda-b8b50aa8be0e
+
